@@ -1,0 +1,56 @@
+.main-header {
+  background: url("https://picsum.photos/id/1044/4032/2268") no-repeat center;
+  background-size: cover;
+  flex-direction: column;
+  width: 100vw;
+  height: 550px;
+  display: flex;
+  padding: 10px;
+  nav {
+    .logo {
+      color: $color-gray;
+    }
+    color: $color-gray;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .nav-items {
+      min-width: 400px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .nav-icons {
+      ul {
+        display: flex;
+      }
+      li {
+        width: 20px;
+        height: 20px;
+        background-color: $color-white;
+        border-radius: 50%;
+        & + li {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .banner {
+    margin: auto;
+    text-align: center;
+    h1 {
+      color: $color-gray;
+      font-weight: 500;
+      font-size: 32px;
+    }
+    .call-to-action {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 42px;
+      border-bottom: 3px solid $color-white;
+    }
+  }
+}
