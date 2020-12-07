@@ -1,5 +1,7 @@
 .section-two {
   position: relative;
+  height: 500px;
+  margin-bottom: 80px;
   .content {
     @include call-to-action-article;
   }
