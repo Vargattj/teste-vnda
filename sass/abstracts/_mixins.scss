@@ -1,0 +1,37 @@
+@mixin simple-input {
+  form {
+    display: flex;
+    height: 46px;
+    width: 50%;
+    input {
+      padding: 15px;
+      outline: 0;
+      flex: 1;
+      justify-content: space-between;
+      &::-webkit-input-placeholder {
+        padding-left: 20px;
+        text-transform: uppercase;
+      }
+    }
+    button {
+      cursor: pointer;
+      color: $color-gray-3;
+      border: 0;
+      width: 72px;
+      background-color: $color-gray-1;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0,0.6);
+      }
+    }
+    a {
+      display: flex;
+      width: 100px;
+    }
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
