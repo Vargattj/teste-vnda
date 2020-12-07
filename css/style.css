@@ -55,15 +55,18 @@ body {
       font-size: 42px;
       border-bottom: 3px solid #ffffff; }
 
-.section-one {
-  display: flex;
+.main {
   max-width: 1100px;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
+
+.section-one {
+  position: relative;
+  height: 800px;
+  margin-bottom: 60px; }
   .section-one article {
-    position: relative;
+    position: absolute;
     width: 800px;
-    left: -135px;
+    left: -200px;
     padding: 100px 0;
     background-color: #f5e5d9; }
     .section-one article .content {
@@ -85,18 +88,18 @@ body {
         display: block;
         width: 250px;
         text-align: center; }
-    .section-one article .bottom-image {
-      position: absolute;
-      bottom: -165px;
-      right: -210px;
-      width: 500px;
-      height: 350px;
-      border-radius: 5px; }
+  .section-one .bottom-center-image {
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 250px);
+    width: 500px;
+    height: 350px;
+    border-radius: 5px; }
   .section-one .top-right-img {
     position: absolute;
     right: -100px;
-    height: 380px;
-    width: 380px; }
+    height: 350px;
+    width: 350px; }
     .section-one .top-right-img img {
       width: 100%;
       margin: 0 auto; }
@@ -105,8 +108,36 @@ body {
     right: -125px;
     height: 400px;
     width: 300px;
-    bottom: 20px;
+    bottom: 200px;
     z-index: -1; }
     .section-one .bottom-right-img img {
       width: 100%;
       margin: 0 auto; }
+
+.section-two {
+  position: relative; }
+  .section-two .content {
+    max-width: 400px; }
+    .section-two .content h2 {
+      font-weight: 500;
+      font-size: 32px;
+      color: #272727;
+      line-height: 1.2; }
+    .section-two .content p {
+      margin: 30px 0;
+      max-width: 300px;
+      line-height: 1.2; }
+    .section-two .content a {
+      padding: 15px 25px;
+      color: #fff;
+      background-color: #000000;
+      display: block;
+      width: 250px;
+      text-align: center; }
+  .section-two .right-img {
+    position: absolute;
+    right: -125px;
+    z-index: 2;
+    top: -120px;
+    width: 600px;
+    height: 600px; }

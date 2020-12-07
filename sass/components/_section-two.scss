@@ -1,0 +1,14 @@
+.section-two {
+  position: relative;
+  .content {
+    @include call-to-action-article;
+  }
+  .right-img {
+    position: absolute;
+    right: -125px;
+    z-index: 2;
+    top: -120px;
+    width: 600px;
+    height: 600px;
+  }
+}

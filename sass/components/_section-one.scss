@@ -1,45 +1,32 @@
 .section-one {
-  display: flex;
-  @include wrapper;
   position: relative;
+  height: 800px;
+  margin-bottom: 60px;
+
   article {
-    position: relative;
+    position: absolute;
     width: 800px;
-    left: -135px;
+    left: -200px;
     padding: 100px 0;
     background-color: $color-almond;
     .content {
-      max-width: 400px;
+      @include call-to-action-article;
       margin: 0 auto;
-      h2 {
-        font-weight: 500;
-        font-size: 32px;
-        color: $color-gray-1;
-        line-height: 1.2;
-      }
-      p {
-        margin: 30px 0;
-        max-width: 300px;
-        line-height: 1.2;
-      }
-      a {
-        @include call-to-action-button;
-      }
     }
-    .bottom-image {
-      position: absolute;
-      bottom: -165px;
-      right: -210px;
-      width: 500px;
-      height: 350px;
-      border-radius: 5px;
-    }
+  }
+  .bottom-center-image {
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 250px);
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
   }
   .top-right-img {
     position: absolute;
     right: -100px;
-    height: 380px;
-    width: 380px;
+    height: 350px;
+    width: 350px;
     img {
       width: 100%;
       margin: 0 auto;
@@ -50,7 +37,7 @@
     right: -125px;
     height: 400px;
     width: 300px;
-    bottom: 20px;
+    bottom: 200px;
     z-index: -1;
     img {
       width: 100%;
