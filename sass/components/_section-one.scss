@@ -1,0 +1,60 @@
+.section-one {
+  display: flex;
+  @include wrapper;
+  position: relative;
+  article {
+    position: relative;
+    width: 800px;
+    left: -135px;
+    padding: 100px 0;
+    background-color: $color-almond;
+    .content {
+      max-width: 400px;
+      margin: 0 auto;
+      h2 {
+        font-weight: 500;
+        font-size: 32px;
+        color: $color-gray-1;
+        line-height: 1.2;
+      }
+      p {
+        margin: 30px 0;
+        max-width: 300px;
+        line-height: 1.2;
+      }
+      a {
+        @include call-to-action-button;
+      }
+    }
+    .bottom-image {
+      position: absolute;
+      bottom: -165px;
+      right: -210px;
+      width: 500px;
+      height: 350px;
+      border-radius: 5px;
+    }
+  }
+  .top-right-img {
+    position: absolute;
+    right: -100px;
+    height: 380px;
+    width: 380px;
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .bottom-right-img {
+    position: absolute;
+    right: -125px;
+    height: 400px;
+    width: 300px;
+    bottom: 20px;
+    z-index: -1;
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
