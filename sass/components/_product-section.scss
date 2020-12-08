@@ -1,4 +1,6 @@
 .product-section {
+  @include wrapper;
+
   margin-bottom: 200px;
   h2 {
     font-size: 36px;

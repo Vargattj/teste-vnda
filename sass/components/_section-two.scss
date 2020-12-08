@@ -1,7 +1,10 @@
 .section-two {
+  @include wrapper;
   position: relative;
   height: 500px;
   margin-bottom: 80px;
+  margin-top: 60px;
+
   .content {
     @include call-to-action-article;
   }

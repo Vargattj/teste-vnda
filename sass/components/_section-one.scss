@@ -1,4 +1,5 @@
 .section-one {
+  @include wrapper;
   position: relative;
   height: 800px;
   margin-bottom: 60px;
