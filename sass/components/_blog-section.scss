@@ -78,7 +78,7 @@
   height: 500px;
   background: url("https://picsum.photos/id/15/1100/800") no-repeat;
   background-size: cover;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   & > div {
     @include wrapper;
   }
