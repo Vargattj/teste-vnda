@@ -8,13 +8,13 @@
   </head>
   <body>
     <header class="main-header">
-      <nav>
+      <nav class="nav">
         <a href="#" class="logo">LOGO</a>
         <div class="nav-items">
-          <ul>
-            <li>MENU</li>
-            <li>MENU</li>
-            <li>MENU</li>
+          <ul class="navigation">
+            <li><a>MENU</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">MENU</a></li>
           </ul>
         </div>
         <div class="nav-icons">
@@ -25,6 +25,13 @@
           </ul>
         </div>
       </nav>
+      <div class="hamburger-button">
+        <button type="button" class="menu-closed">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
       <div class="banner">
         <h1>TÍTULO DO BANNER</h1>
         <a href="#" class="call-to-action">CALL TO ACTION</a>
@@ -51,21 +58,24 @@
             <a href="#">Call to action</a>
           </div>
         </article>
-        <img
-          src="https://picsum.photos/id/0/700/700"
-          alt=""
-          class="bottom-center-image"
-        />
-        <img
-          src="https://picsum.photos/id/1050/600/600"
-          alt=""
-          class="top-right-img"
-        />
-        <img
-          src="https:/picsum.photos/id/1/600/600"
-          alt=""
-          class="bottom-right-img"
-        />
+        <div class="absolute-images">
+          <img
+            src="https://source.unsplash.com/P3pI6xzovu0/800"
+            alt=""
+            class="bottom-center-image"
+          />
+          <img
+            src="https://source.unsplash.com/m1MRYp556Ew/800"
+            alt=""
+            class="top-right-img"
+          />
+          <img
+            src="https://source.unsplash.com/Lj1S1_KD61k/800"
+            alt=""
+            class="bottom-right-img"
+          />
+          <!-- acn5ERAeSb4 -->
+        </div>
       </section>
       <section class="section-two">
         <article>
@@ -88,79 +98,75 @@
           </div>
         </article>
         <img
-          src="https://picsum.photos/id/1010/600/600"
+          src="https://source.unsplash.com/VW5VjskNXZ8/800"
           alt=""
           class="right-img"
         />
       </section>
+
       <section class="product-section">
-        <h2>Título da Seção</h2>
+        <h2>Lançamentos</h2>
         <ul class="product-list">
           <li class="product-item">
             <span class="flag active">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
+            <img src="https://source.unsplash.com/fEt6Wd4t4j0/600" alt="" />
+            <p>Camiseta Original</p>
+            <a href="">Comprar</a>
           </li>
           <li class="product-item">
             <span class="flag">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
+            <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
+            <p>Camiseta Caveira</p>
+            <a href="">Comprar</a>
           </li>
           <li class="product-item">
             <span class="flag">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
+            <img src="https://source.unsplash.com/9ugEeqflo70/600" alt="" />
+            <p>Camiseta Marca Hotel</p>
+            <a href="">Comprar</a>
           </li>
 
           <li class="product-item">
             <span class="flag">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
+            <img src="https://source.unsplash.com/ulKyr2QZIXI/600" alt="" />
+            <p>Camiseta Gotchii</p>
+            <a href="">Comprar</a>
           </li>
         </ul>
       </section>
+
       <section class="product-section">
-        <h2>Título da Seção</h2>
+        <h2>Em alta</h2>
         <ul class="product-list">
           <li class="product-item">
-            <span class="flag active">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
-          </li>
-          <li class="product-item">
-            <span class="flag active">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
-          </li>
-          <li class="product-item">
             <span class="flag">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
+            <img src="https://source.unsplash.com/9ugEeqflo70/600" alt="" />
+            <p>Camiseta Marca Hotel</p>
+            <a href="">Comprar</a>
+          </li>
+
+          <li class="product-item">
+            <span class="flag active">flag</span>
+            <img src="https://source.unsplash.com/fEt6Wd4t4j0/600" alt="" />
+            <p>Camiseta Original</p>
+            <a href="">Comprar</a>
           </li>
 
           <li class="product-item">
             <span class="flag">flag</span>
-            <h3>Categoria</h3>
-            <img src="https://picsum.photos/id/1011/800/800" alt="" />
-            <p>Nome do produto</p>
-            <a href="">Call to action</a>
+            <img src="https://source.unsplash.com/ulKyr2QZIXI/600" alt="" />
+            <p>Camiseta Gotchii</p>
+            <a href="">Comprar</a>
+          </li>
+          <li class="product-item">
+            <span class="flag">flag</span>
+            <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
+            <p>Camiseta Caveira</p>
+            <a href="">Comprar</a>
           </li>
         </ul>
       </section>
+
       <section class="quote-section">
         <h1>
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -187,7 +193,8 @@
               <a href="#">Call to action</a>
             </div>
             <img
-              src="https:/picsum.photos/id/1/600/600"
+              xPJYL0l5Ii8
+              src="https://source.unsplash.com/xPJYL0l5Ii8/800"
               alt=""
               class="right-image"
             />
@@ -195,10 +202,11 @@
           <div class="blog-posts">
             <ul>
               <li class="blog-post">
-                <img src="https:/picsum.photos/id/1/600/600" alt="" />
+                <img src="https://source.unsplash.com/Fy7RX0gHZRM/800" alt="" />
+
                 <div class="about">
-                  <span class="category">TEMA 01</span>
-                  <h2>Título do post lorem ipsum</h2>
+                  <span class="category">MODA</span>
+                  <h2>Como vertir camisetas vermelhas</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -208,10 +216,11 @@
                 </div>
               </li>
               <li class="blog-post">
-                <img src="https:/picsum.photos/id/1/600/600" alt="" />
+                <img src="https://source.unsplash.com/SpIKPT8zeAs/800" alt="" />
+
                 <div class="about">
-                  <span class="category">TEMA 02</span>
-                  <h2>Título do post lorem ipsum</h2>
+                  <span class="category">MODA</span>
+                  <h2>Como vertir camisetas listradas</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -221,10 +230,11 @@
                 </div>
               </li>
               <li class="blog-post">
-                <img src="https:/picsum.photos/id/1/600/600" alt="" />
+                <img src="https://source.unsplash.com/sibVwORYqs0/800" alt="" />
+
                 <div class="about">
-                  <span class="category">TEMA 03</span>
-                  <h2>Título do post lorem ipsum</h2>
+                  <span class="category">MODA</span>
+                  <h2>Como vertir camisetas coloridas</h2>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna

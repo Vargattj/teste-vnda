@@ -1,15 +1,15 @@
 .section-one {
-  @include wrapper;
   position: relative;
   height: 800px;
   margin-bottom: 60px;
 
   article {
+    @include wrapper;
+    left: -68px;
     position: absolute;
     width: 800px;
-    left: -200px;
     padding: 100px 0;
-    background-color: $color-almond;
+    background-color: $color-gray;
     .content {
       @include call-to-action-article;
       margin: 0 auto;
@@ -21,13 +21,18 @@
     right: calc(50% - 250px);
     width: 500px;
     height: 350px;
-    border-radius: 5px;
+    object-fit: cover;
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
   .top-right-img {
     position: absolute;
-    right: -100px;
+    right: 40px;
     height: 350px;
     width: 350px;
+    object-fit: cover;
     img {
       width: 100%;
       margin: 0 auto;
@@ -35,14 +40,44 @@
   }
   .bottom-right-img {
     position: absolute;
-    right: -125px;
-    height: 400px;
+    right: 0px;
+    height: 380px;
     width: 300px;
     bottom: 200px;
     z-index: -1;
     img {
+      object-fit: cover;
       width: 100%;
       margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-one {
+    article {
+      position: static;
+      padding: 100px 20px;
+      width: fit-content;
+      text-align: center;
+      p {
+        margin: 0;
+      }
+    }
+
+    .bottom-center-image {
+      display: inherit;
+      width: 90%;
+      height: 160px;
+      bottom: 20px;
+      left: calc(50% - 162px);
+      object-fit: cover;
+    }
+    .top-right-img {
+      display: none;
+    }
+    .bottom-right-img {
+      display: none;
     }
   }
 }

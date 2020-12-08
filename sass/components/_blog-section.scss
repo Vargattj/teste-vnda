@@ -1,6 +1,6 @@
 .blog-section {
   width: 100%;
-  background-color: $color-almond;
+  background-color: $color-gray;
   .introduction-area {
     @include wrapper;
     article {
@@ -19,6 +19,7 @@
         top: -60px;
         width: 600px;
         height: 600px;
+        object-fit: cover;
       }
     }
   }
@@ -99,5 +100,28 @@
     text-align: right;
     color: $color-white;
     font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-section {
+    .introduction-area {
+      article {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        .content {
+          order: 2;
+        }
+        .right-image {
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+          margin-bottom: 15px;
+          position: static;
+          order: 1;
+        }
+      }
+    }
   }
 }

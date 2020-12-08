@@ -13,60 +13,66 @@ body {
   box-sizing: border-box; }
 
 .main-header {
-  background: url("https://picsum.photos/id/1044/4032/2268") no-repeat center;
+  background: url("https://source.unsplash.com/z1B9f48F5dc/1200") no-repeat center;
   background-size: cover;
   flex-direction: column;
   width: 100%;
-  height: 550px;
+  height: 600px;
   display: flex;
   padding: 10px; }
-  .main-header nav {
-    color: #f6f6f6;
+  .main-header .nav {
+    color: #272727;
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
-    .main-header nav .logo {
-      color: #f6f6f6; }
-    .main-header nav .nav-items {
+    .main-header .nav .logo {
+      color: #272727; }
+    .main-header .nav .nav-items {
       min-width: 400px; }
-      .main-header nav .nav-items ul {
+      .main-header .nav .nav-items ul {
         display: flex;
         justify-content: space-between; }
-    .main-header nav .nav-icons ul {
+    .main-header .nav .nav-icons ul {
       display: flex; }
-    .main-header nav .nav-icons li {
+    .main-header .nav .nav-icons li {
       width: 20px;
       height: 20px;
       background-color: #ffffff;
       border-radius: 50%; }
-      .main-header nav .nav-icons li + li {
+      .main-header .nav .nav-icons li + li {
         margin-left: 10px; }
+  .main-header .hamburger-button {
+    display: none; }
   .main-header .banner {
     margin: auto;
     text-align: center; }
     .main-header .banner h1 {
-      color: #f6f6f6;
+      color: #ffffff;
       font-weight: 500;
       font-size: 32px; }
     .main-header .banner .call-to-action {
       color: #ffffff;
       font-weight: bold;
       font-size: 42px;
-      border-bottom: 3px solid #ffffff; }
+      border-bottom: 3px solid #f5e5d9; }
 
 .section-one {
-  max-width: 1100px;
-  margin: 0 auto;
   position: relative;
   height: 800px;
   margin-bottom: 60px; }
   .section-one article {
+    max-width: 1100px;
+    margin: 0 auto;
+    left: -68px;
     position: absolute;
     width: 800px;
-    left: -200px;
     padding: 100px 0;
-    background-color: #f5e5d9; }
+    background-color: #f6f6f6; }
+    @media only screen and (max-width: 768px) {
+      .section-one article {
+        width: 90%;
+        margin: 0 auto; } }
     .section-one article .content {
       max-width: 400px;
       margin: 0 auto; }
@@ -86,39 +92,73 @@ body {
         display: block;
         width: 250px;
         text-align: center; }
+        @media only screen and (max-width: 768px) {
+          .section-one article .content a {
+            margin: 0 auto; } }
+      @media only screen and (max-width: 768px) {
+        .section-one article .content {
+          text-align: center; } }
   .section-one .bottom-center-image {
     position: absolute;
     bottom: 0px;
     right: calc(50% - 250px);
     width: 500px;
     height: 350px;
-    border-radius: 5px; }
+    object-fit: cover; }
+    .section-one .bottom-center-image img {
+      height: 100%;
+      width: 100%; }
   .section-one .top-right-img {
     position: absolute;
-    right: -100px;
+    right: 40px;
     height: 350px;
-    width: 350px; }
+    width: 350px;
+    object-fit: cover; }
     .section-one .top-right-img img {
       width: 100%;
       margin: 0 auto; }
   .section-one .bottom-right-img {
     position: absolute;
-    right: -125px;
-    height: 400px;
+    right: 0px;
+    height: 380px;
     width: 300px;
     bottom: 200px;
     z-index: -1; }
     .section-one .bottom-right-img img {
+      object-fit: cover;
       width: 100%;
       margin: 0 auto; }
+
+@media only screen and (max-width: 768px) {
+  .section-one article {
+    position: static;
+    padding: 100px 20px;
+    width: fit-content;
+    text-align: center; }
+    .section-one article p {
+      margin: 0; }
+  .section-one .bottom-center-image {
+    display: inherit;
+    width: 90%;
+    height: 160px;
+    bottom: 20px;
+    left: calc(50% - 162px);
+    object-fit: cover; }
+  .section-one .top-right-img {
+    display: none; }
+  .section-one .bottom-right-img {
+    display: none; } }
 
 .section-two {
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
   height: 500px;
-  margin-bottom: 80px;
-  margin-top: 60px; }
+  margin-bottom: 80px; }
+  @media only screen and (max-width: 768px) {
+    .section-two {
+      width: 90%;
+      margin: 0 auto; } }
   .section-two .content {
     max-width: 400px; }
     .section-two .content h2 {
@@ -137,6 +177,12 @@ body {
       display: block;
       width: 250px;
       text-align: center; }
+      @media only screen and (max-width: 768px) {
+        .section-two .content a {
+          margin: 0 auto; } }
+    @media only screen and (max-width: 768px) {
+      .section-two .content {
+        text-align: center; } }
   .section-two .right-img {
     position: absolute;
     right: -125px;
@@ -145,10 +191,28 @@ body {
     width: 600px;
     height: 600px; }
 
+@media only screen and (max-width: 768px) {
+  .section-two {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-two .right-img {
+      margin-top: 40px;
+      height: 200px;
+      width: 300px;
+      position: static;
+      border-radius: 5px;
+      object-fit: cover; } }
+
 .product-section {
   max-width: 1100px;
   margin: 0 auto;
-  margin-bottom: 200px; }
+  margin-bottom: 140px; }
+  @media only screen and (max-width: 768px) {
+    .product-section {
+      width: 90%;
+      margin: 0 auto; } }
   .product-section h2 {
     font-size: 36px;
     text-transform: uppercase;
@@ -167,7 +231,6 @@ body {
       margin-right: 20px; }
       .product-section .product-list li .flag {
         position: absolute;
-        left: 20px;
         top: 0px;
         background-color: #fff;
         color: #000;
@@ -183,7 +246,7 @@ body {
         font-weight: 500; }
       .product-section .product-list li img {
         object-fit: cover;
-        height: 100%;
+        height: 90%;
         width: 100%; }
       .product-section .product-list li p {
         text-align: center;
@@ -202,6 +265,9 @@ body {
         color: #000000;
         border: solid 2px #000000;
         width: 100%; }
+        @media only screen and (max-width: 768px) {
+          .product-section .product-list li a {
+            margin: 0 auto; } }
 
 .quote-section {
   max-width: 1100px;
@@ -212,6 +278,10 @@ body {
   width: 100%;
   height: 400px;
   margin-bottom: 60px; }
+  @media only screen and (max-width: 768px) {
+    .quote-section {
+      width: 90%;
+      margin: 0 auto; } }
   .quote-section h1 {
     font-size: 32px;
     max-width: 800px;
@@ -220,10 +290,14 @@ body {
 
 .blog-section {
   width: 100%;
-  background-color: #f5e5d9; }
+  background-color: #f6f6f6; }
   .blog-section .introduction-area {
     max-width: 1100px;
     margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      .blog-section .introduction-area {
+        width: 90%;
+        margin: 0 auto; } }
     .blog-section .introduction-area article {
       position: relative;
       height: 600px;
@@ -247,13 +321,20 @@ body {
           display: block;
           width: 250px;
           text-align: center; }
+          @media only screen and (max-width: 768px) {
+            .blog-section .introduction-area article .content a {
+              margin: 0 auto; } }
+        @media only screen and (max-width: 768px) {
+          .blog-section .introduction-area article .content {
+            text-align: center; } }
       .blog-section .introduction-area article .right-image {
         position: absolute;
         right: -125px;
         z-index: 2;
         top: -60px;
         width: 600px;
-        height: 600px; }
+        height: 600px;
+        object-fit: cover; }
 
 .blog-posts {
   height: 1000px; }
@@ -303,6 +384,10 @@ body {
   .blog-banner-area > div {
     max-width: 1100px;
     margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      .blog-banner-area > div {
+        width: 90%;
+        margin: 0 auto; } }
   .blog-banner-area .left-image {
     text-align: center;
     color: #f5e5d9;
@@ -318,6 +403,21 @@ body {
     text-align: right;
     color: #ffffff;
     font-size: 32px; }
+
+@media only screen and (max-width: 768px) {
+  .blog-section .introduction-area article {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+    .blog-section .introduction-area article .content {
+      order: 2; }
+    .blog-section .introduction-area article .right-image {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      position: static;
+      order: 1; } }
 
 .footer-section .address {
   text-align: center;
@@ -341,6 +441,10 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 80px; }
+  @media only screen and (max-width: 768px) {
+    .footer-section form {
+      width: 90%;
+      margin: 0 auto; } }
   .footer-section form input {
     margin: 0 15px;
     outline: none;
@@ -361,6 +465,9 @@ body {
     text-align: center;
     border: none;
     cursor: pointer; }
+    @media only screen and (max-width: 768px) {
+      .footer-section form button {
+        margin: 0 auto; } }
 
 .footer-section .bottom-footer {
   background-color: #f5e5d9;
@@ -371,7 +478,84 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%; }
+    @media only screen and (max-width: 768px) {
+      .footer-section .bottom-footer nav {
+        width: 90%;
+        margin: 0 auto; } }
   .footer-section .bottom-footer span {
     display: block;
     text-align: center;
     margin-top: 40px; }
+
+@media only screen and (max-width: 768px) {
+  .main-header .hamburger-button {
+    display: block;
+    top: 20;
+    position: absolute;
+    top: 10px;
+    right: 20px; }
+    .main-header .hamburger-button button {
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: 0;
+      box-shadow: none;
+      cursor: pointer;
+      vertical-align: middle;
+      z-index: 999; }
+      .main-header .hamburger-button button span {
+        display: block;
+        width: 80%;
+        height: 2px;
+        margin: 5px auto;
+        background: #fff;
+        transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); }
+        .main-header .hamburger-button button span:hover, .main-header .hamburger-button button span:focus {
+          background: #ccc; }
+        .main-header .hamburger-button button span:first-of-type {
+          transform: rotate(45deg) translate(5px, 5px); }
+        .main-header .hamburger-button button span:nth-of-type(2) {
+          opacity: 0; }
+        .main-header .hamburger-button button span:last-of-type {
+          transform: rotate(-45deg) translate(5px, -5px); }
+      .main-header .hamburger-button button:focus {
+        outline: 0; }
+      .main-header .hamburger-button button.menu-closed span {
+        transform: none;
+        opacity: 1; }
+  .main-header .nav.active {
+    top: 0px;
+    overflow-y: hidden; }
+  .main-header .nav {
+    top: -700px;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    position: absolute;
+    transition: top 0.4s ease;
+    flex-direction: column;
+    align-items: center;
+    left: 0; }
+    .main-header .nav a {
+      color: #000; }
+    .main-header .nav .navigation {
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center; }
+    .main-header .nav .nav-icons {
+      bottom: 0;
+      flex-direction: column; }
+  .product-section h2 {
+    margin-bottom: 20px; }
+  .product-section .product-list {
+    flex-direction: column;
+    align-items: center; }
+    .product-section .product-list li {
+      margin-bottom: 30px;
+      margin-right: 0; }
+      .product-section .product-list li .flag {
+        top: 60px;
+        left: 0; }
+      .product-section .product-list li img {
+        height: 400px; } }

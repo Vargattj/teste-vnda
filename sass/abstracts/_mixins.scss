@@ -1,6 +1,11 @@
 @mixin wrapper {
   max-width: 1100px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @mixin call-to-action-button {
@@ -10,6 +15,9 @@
   display: block;
   width: 250px;
   text-align: center;
+  @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
 }
 
 @mixin call-to-action-article {
@@ -27,5 +35,8 @@
   }
   a {
     @include call-to-action-button;
+  }
+  @media only screen and (max-width: 768px) {
+    text-align: center;
   }
 }

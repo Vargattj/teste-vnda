@@ -1,16 +1,17 @@
 .main-header {
-  background: url("https://picsum.photos/id/1044/4032/2268") no-repeat center;
+  background: url("https://source.unsplash.com/z1B9f48F5dc/1200") no-repeat
+    center;
   background-size: cover;
   flex-direction: column;
   width: 100%;
-  height: 550px;
+  height: 600px;
   display: flex;
   padding: 10px;
-  nav {
+  .nav {
     .logo {
-      color: $color-gray;
+      color: $color-gray-1;
     }
-    color: $color-gray;
+    color: $color-gray-1;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -37,12 +38,15 @@
       }
     }
   }
+  .hamburger-button {
+    display: none;
+  }
 
   .banner {
     margin: auto;
     text-align: center;
     h1 {
-      color: $color-gray;
+      color: $color-white;
       font-weight: 500;
       font-size: 32px;
     }
@@ -50,7 +54,9 @@
       color: $color-white;
       font-weight: bold;
       font-size: 42px;
-      border-bottom: 3px solid $color-white;
+      border-bottom: 3px solid $color-almond;
     }
   }
 }
+
+// https://source.unsplash.com/m1MRYp556Ew
