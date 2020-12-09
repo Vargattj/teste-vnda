@@ -5,9 +5,12 @@
   }
   .product-list {
     align-items: center;
+    z-index: 0;
+
     li {
       margin-bottom: 30px;
       margin-right: 0;
+
       .flag {
         top: 60px;
         left: 0;

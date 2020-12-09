@@ -304,7 +304,8 @@ body {
       width: 90%;
       position: static;
       object-fit: cover;
-      order: 1; } }
+      order: 1;
+      z-index: 0; } }
 
 .product-section {
   max-width: 1100px;
@@ -320,7 +321,8 @@ body {
       margin: 0 auto; } }
   .product-section .swiper-button-next,
   .product-section .swiper-button-prev {
-    color: #f5e5d9; }
+    color: #f5e5d9;
+    z-index: 0; }
   .product-section h2 {
     font-size: 36px;
     text-transform: uppercase;
@@ -331,8 +333,10 @@ body {
     display: flex;
     width: 100%; }
     .product-section .product-list li {
-      box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+      box-shadow: rgba(0, 0, 0, 0.24) -1px 2px 9px;
       position: relative;
+      transition: transform 0.35s ease-in-out 0s;
+      height: 550px;
       flex-direction: column;
       width: 300px;
       justify-content: center;
@@ -397,6 +401,8 @@ body {
           .product-section .product-list li .desc a:hover {
             background-color: #272727;
             color: #fff; }
+      .product-section .product-list li:hover {
+        transform: rotateX(7deg) translateY(-6px) scale(1.05); }
 
 .quote-section {
   max-width: 1100px;
@@ -567,6 +573,7 @@ body {
     .blog-section .introduction-area article .content {
       order: 2; }
     .blog-section .introduction-area article .right-image {
+      z-index: 0;
       height: 300px;
       width: 100%;
       object-fit: cover;
@@ -580,9 +587,11 @@ body {
       .blog-section .blog-posts ul .blog-post {
         box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.3);
         height: auto;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        z-index: 0; }
         .blog-section .blog-posts ul .blog-post img {
-          height: 260px; }
+          height: 260px;
+          z-index: 0; }
         .blog-section .blog-posts ul .blog-post .about {
           max-width: 90%; }
           .blog-section .blog-posts ul .blog-post .about > div {
@@ -721,7 +730,7 @@ body {
     .main-header .swiper-wrapper .swiper-slide img {
       height: 400px; }
     .main-header .hamburger-button {
-      z-index: 501;
+      z-index: 1000;
       display: block;
       top: 20;
       position: fixed;
@@ -757,7 +766,7 @@ body {
     .main-header .nav.active {
       top: 0px; }
     .main-header .nav {
-      z-index: 400;
+      z-index: 999;
       touch-action: none;
       position: fixed;
       top: -700px;
@@ -782,7 +791,8 @@ body {
     .product-section h2 {
       margin-bottom: 20px; }
     .product-section .product-list {
-      align-items: center; }
+      align-items: center;
+      z-index: 0; }
       .product-section .product-list li {
         margin-bottom: 30px;
         margin-right: 0; }
