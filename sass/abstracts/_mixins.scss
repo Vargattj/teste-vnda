@@ -10,11 +10,23 @@
 
 @mixin call-to-action-button {
   padding: 15px 25px;
-  color: #fff;
-  background-color: $color-black;
+  color: $color-gray;
+  font-weight: bold;
+  border: 2px solid transparent;
+  background: $color-gray-1;
   display: block;
   width: 250px;
   text-align: center;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.4s;
+
+  &:hover {
+    border: 2px solid $color-gray-1;
+    background: $color-gray-1;
+    background: none;
+    color: $color-gray-1;
+  }
   @media only screen and (max-width: 768px) {
     margin: 0 auto;
   }
@@ -27,16 +39,38 @@
     font-size: 32px;
     color: $color-gray-1;
     line-height: 1.2;
+    font-family: "PT Sans", sans-serif;
   }
   p {
     margin: 30px 0;
     max-width: 300px;
-    line-height: 1.2;
+    line-height: 1.4;
+    font-family: "PT Sans", sans-serif;
   }
   a {
     @include call-to-action-button;
   }
   @media only screen and (max-width: 768px) {
     text-align: center;
+    margin: 0 auto;
+    h2 {
+      font-size: 22px;
+    }
+    p {
+      margin: 30px auto;
+      font-size: 16px;
+    }
+  }
+}
+
+@mixin call-to-action-button-outlined {
+  @include call-to-action-button;
+  background: none;
+  border: solid 2px $color-gray-1;
+  color: $color-gray-1;
+
+  &:hover {
+    background-color: $color-gray-1;
+    color: #fff;
   }
 }

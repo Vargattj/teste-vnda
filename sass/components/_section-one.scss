@@ -55,22 +55,23 @@
 
 @media only screen and (max-width: 768px) {
   .section-one {
+    height: auto;
+    background-color: $color-gray;
+    padding: 40px 0;
+    flex-direction: column;
+    display: flex;
     article {
+      padding: 20px 0;
       position: static;
-      padding: 100px 20px;
-      width: fit-content;
-      text-align: center;
-      p {
-        margin: 0;
-      }
+      order: 2;
     }
 
     .bottom-center-image {
-      display: inherit;
+      position: static;
+      margin: 0 auto;
+      order: 1;
       width: 90%;
-      height: 160px;
-      bottom: 20px;
-      left: calc(50% - 162px);
+      height: 200px;
       object-fit: cover;
     }
     .top-right-img {

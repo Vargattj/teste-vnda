@@ -19,17 +19,21 @@
 
 @media only screen and (max-width: 768px) {
   .section-two {
-    height: 800px;
+    position: static;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    article {
+      padding: 20px 0;
+      order: 2;
+    }
     .right-img {
-      margin-top: 40px;
+      margin: 0 auto;
       height: 200px;
-      width: 300px;
+      width: 90%;
       position: static;
-      border-radius: 5px;
       object-fit: cover;
+      order: 1;
     }
   }
 }

@@ -42,7 +42,7 @@
     }
   }
   .bottom-footer {
-    background-color: $color-almond;
+    background-color: $color-gray;
     padding-top: 40px;
     nav {
       @include wrapper;
@@ -54,6 +54,32 @@
       display: block;
       text-align: center;
       margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    .address {
+      width: 90%;
+      margin: 60px auto;
+      p {
+        text-align: start;
+        font-size: 18px;
+      }
+    }
+    form {
+      flex-direction: column;
+      align-items: start;
+      h2 {
+        max-width: fit-content;
+      }
+      input {
+        margin: 10px 0;
+      }
+      button {
+        width: 100%;
+      }
     }
   }
 }

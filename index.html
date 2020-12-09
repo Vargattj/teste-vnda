@@ -3,25 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./js/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Teste - VNDA</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <img src="https://source.unsplash.com/z1B9f48F5dc/1200" alt="" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="https://source.unsplash.com/TT-ROxWj9nA/1200" alt="" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <img src="https://source.unsplash.com/AhfrA5VQNpM/1200" alt="" />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="banner">
+        <h1>NOVA COLEÇÃO</h1>
+        <a href="#" class="call-to-action">PRIMAVERA VERÃO</a>
+      </div>
       <nav class="nav">
         <a href="#" class="logo">LOGO</a>
         <div class="nav-items">
           <ul class="navigation">
-            <li><a>MENU</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">MENU</a></li>
+            <li><a href="#">HOMEM</a></li>
+            <li><a href="#">MULHER</a></li>
+            <li><a href="#">KIDS</a></li>
+            <li><a href="#">OUTLET</a></li>
           </ul>
         </div>
         <div class="nav-icons">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><span class="material-icons"> search </span></li>
+            <li><span class="material-icons"> person </span></li>
+            <li><span class="material-icons"> shopping_cart </span></li>
           </ul>
         </div>
       </nav>
@@ -32,15 +76,11 @@
           <span></span>
         </button>
       </div>
-      <div class="banner">
-        <h1>TÍTULO DO BANNER</h1>
-        <a href="#" class="call-to-action">CALL TO ACTION</a>
-      </div>
     </header>
     <main class="main">
-      <section class="section-one">
+      <section class="section-one fade-up-right">
         <article>
-          <div class="content">
+          <div class="content" data-aos="fade-up-right">
             <h2>
               Título da seção int occaecat cupidatat non proident, sunt in culpa
               qui officia deserunt
@@ -58,28 +98,25 @@
             <a href="#">Call to action</a>
           </div>
         </article>
-        <div class="absolute-images">
-          <img
-            src="https://source.unsplash.com/P3pI6xzovu0/800"
-            alt=""
-            class="bottom-center-image"
-          />
-          <img
-            src="https://source.unsplash.com/m1MRYp556Ew/800"
-            alt=""
-            class="top-right-img"
-          />
-          <img
-            src="https://source.unsplash.com/Lj1S1_KD61k/800"
-            alt=""
-            class="bottom-right-img"
-          />
-          <!-- acn5ERAeSb4 -->
-        </div>
+        <img
+          src="https://source.unsplash.com/P3pI6xzovu0/800"
+          alt=""
+          class="bottom-center-image"
+        />
+        <img
+          src="https://source.unsplash.com/m1MRYp556Ew/800"
+          alt=""
+          class="top-right-img"
+        />
+        <img
+          src="https://source.unsplash.com/Lj1S1_KD61k/800"
+          alt=""
+          class="bottom-right-img"
+        />
       </section>
       <section class="section-two">
         <article>
-          <div class="content">
+          <div class="content" data-aos="fade-up-right">
             <h2>
               Título da seção int occaecat cupidatat non proident, sunt in culpa
               qui officia deserunt
@@ -105,64 +142,99 @@
       </section>
 
       <section class="product-section">
-        <h2>Lançamentos</h2>
-        <ul class="product-list">
-          <li class="product-item">
-            <span class="flag active">flag</span>
-            <img src="https://source.unsplash.com/fEt6Wd4t4j0/600" alt="" />
-            <p>Camiseta Original</p>
-            <a href="">Comprar</a>
-          </li>
-          <li class="product-item">
-            <span class="flag">flag</span>
-            <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
-            <p>Camiseta Caveira</p>
-            <a href="">Comprar</a>
-          </li>
-          <li class="product-item">
+        <h2>Em alta</h2>
+        <ul class="product-list swiper-wrapper">
+          <li class="product-item swiper-slide">
             <span class="flag">flag</span>
             <img src="https://source.unsplash.com/9ugEeqflo70/600" alt="" />
-            <p>Camiseta Marca Hotel</p>
-            <a href="">Comprar</a>
+            <div class="desc">
+              <p>Camiseta Hotel</p>
+              <a href="">Comprar</a>
+            </div>
           </li>
-
-          <li class="product-item">
+          <li class="product-item swiper-slide">
+            <span class="flag">flag</span>
+            <img src="https://source.unsplash.com/fEt6Wd4t4j0/600" alt="" />
+            <div class="desc">
+              <p>Camiseta Original</p>
+              <a href="">Comprar</a>
+            </div>
+          </li>
+          <li class="product-item swiper-slide">
             <span class="flag">flag</span>
             <img src="https://source.unsplash.com/ulKyr2QZIXI/600" alt="" />
-            <p>Camiseta Gotchii</p>
-            <a href="">Comprar</a>
+            <div class="desc">
+              <p>
+                Camiseta Amo - Marca incrível Com nome desnecessáriamente grande
+              </p>
+              <a href="">Comprar</a>
+            </div>
+          </li>
+          <li class="product-item swiper-slide">
+            <span class="flag">flag</span>
+            <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
+            <div class="desc">
+              <p>Camiseta Caveira</p>
+              <a href="">Comprar</a>
+            </div>
+          </li>
+          <li class="product-item swiper-slide">
+            <span class="flag">flag</span>
+            <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
+            <div class="desc">
+              <p>Camiseta Caveira</p>
+              <a href="">Comprar</a>
+            </div>
+          </li>
+          <li class="product-item swiper-slide">
+            <span class="flag">flag</span>
+            <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
+            <div class="desc">
+              <p>Camiseta Caveira</p>
+              <a href="">Comprar</a>
+            </div>
           </li>
         </ul>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </section>
 
       <section class="product-section">
-        <h2>Em alta</h2>
+        <h2>Lançamentos</h2>
         <ul class="product-list">
           <li class="product-item">
             <span class="flag">flag</span>
-            <img src="https://source.unsplash.com/9ugEeqflo70/600" alt="" />
-            <p>Camiseta Marca Hotel</p>
-            <a href="">Comprar</a>
-          </li>
-
-          <li class="product-item">
-            <span class="flag active">flag</span>
             <img src="https://source.unsplash.com/fEt6Wd4t4j0/600" alt="" />
-            <p>Camiseta Original</p>
-            <a href="">Comprar</a>
+            <div class="desc">
+              <p>Camiseta Original</p>
+              <a href="">Comprar</a>
+            </div>
           </li>
-
           <li class="product-item">
             <span class="flag">flag</span>
-            <img src="https://source.unsplash.com/ulKyr2QZIXI/600" alt="" />
-            <p>Camiseta Gotchii</p>
-            <a href="">Comprar</a>
+            <img src="https://source.unsplash.com/9ugEeqflo70/600" alt="" />
+            <div class="desc">
+              <p>Camiseta Hotel</p>
+              <a href="">Comprar</a>
+            </div>
           </li>
           <li class="product-item">
             <span class="flag">flag</span>
             <img src="https://source.unsplash.com/wtFc4o4Bir8/600" alt="" />
-            <p>Camiseta Caveira</p>
-            <a href="">Comprar</a>
+            <div class="desc">
+              <p>Camiseta Caveira</p>
+              <a href="">Comprar</a>
+            </div>
+          </li>
+          <li class="product-item">
+            <span class="flag">flag</span>
+            <img src="https://source.unsplash.com/ulKyr2QZIXI/600" alt="" />
+            <div class="desc">
+              <p>
+                Camiseta Amo - Marca incrível Com nome desnecessáriamente grande
+              </p>
+              <a href="">Comprar</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -175,7 +247,7 @@
       <div class="blog-section">
         <section class="introduction-area">
           <article>
-            <div class="content">
+            <div class="content" data-aos="fade-up-right">
               <h2>
                 Título da seção int occaecat cupidatat non proident, sunt in
                 culpa qui officia deserunt
@@ -205,8 +277,11 @@
                 <img src="https://source.unsplash.com/Fy7RX0gHZRM/800" alt="" />
 
                 <div class="about">
-                  <span class="category">MODA</span>
-                  <h2>Como vertir camisetas vermelhas</h2>
+                  <div>
+                    <span class="category">MODA</span>
+                    <h2>Como vertir camisetas vermelhas</h2>
+                  </div>
+
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -219,8 +294,10 @@
                 <img src="https://source.unsplash.com/SpIKPT8zeAs/800" alt="" />
 
                 <div class="about">
-                  <span class="category">MODA</span>
-                  <h2>Como vertir camisetas listradas</h2>
+                  <div>
+                    <span class="category">MODA</span>
+                    <h2>Como vertir camisetas listradas</h2>
+                  </div>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -233,8 +310,11 @@
                 <img src="https://source.unsplash.com/sibVwORYqs0/800" alt="" />
 
                 <div class="about">
-                  <span class="category">MODA</span>
-                  <h2>Como vertir camisetas coloridas</h2>
+                  <div>
+                    <span class="category">MODA</span>
+                    <h2>Como vertir camisetas coloridas</h2>
+                  </div>
+
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -250,8 +330,6 @@
       <section class="blog-banner-area">
         <div>
           <div class="left-image">
-            <p>/ Lorem ipsum dolor sit amet, consectetur</p>
-            <p>/ Lorem ipsum dolor sit amet, consectetur</p>
             <p>/ Lorem ipsum dolor sit amet, consectetur</p>
             <img
               src="https://source.unsplash.com/9ShY-Tq70Mc/800"
@@ -299,7 +377,12 @@
         >
       </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="js/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
