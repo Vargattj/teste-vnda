@@ -1,0 +1,36 @@
+.footer-section {
+  font-family: "PT Sans", sans-serif;
+  .address {
+    width: 90%;
+    margin: 60px auto;
+    p {
+      text-align: start;
+      font-size: 18px;
+    }
+  }
+
+  form {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 60px;
+    h2 {
+      max-width: fit-content;
+    }
+    input {
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  .bottom-footer {
+    nav {
+      flex-direction: column;
+      align-items: center;
+
+      ul {
+        margin: 20px 0;
+      }
+    }
+  }
+}

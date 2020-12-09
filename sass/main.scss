@@ -1,12 +1,4 @@
 @import "abstracts/variables.scss";
 @import "abstracts/mixins.scss";
 @import "base/_base.scss";
-@import "./components/header.scss";
-@import "./components/main-area.scss";
-@import "./components/section-one.scss";
-@import "./components/section-two.scss";
-@import "./components/product-section.scss";
-@import "./components/quote-section.scss";
-@import "./components/blog-section.scss";
-@import "./components/footer-section.scss";
-@import "./responsive/responsive.scss";
+@import "pages/index.scss";

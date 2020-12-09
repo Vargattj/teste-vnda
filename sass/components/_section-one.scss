@@ -52,33 +52,3 @@
     }
   }
 }
-
-@media only screen and (max-width: 768px) {
-  .section-one {
-    height: auto;
-    background-color: $color-gray;
-    padding: 40px 0;
-    flex-direction: column;
-    display: flex;
-    article {
-      padding: 20px 0;
-      position: static;
-      order: 2;
-    }
-
-    .bottom-center-image {
-      position: static;
-      margin: 0 auto;
-      order: 1;
-      width: 90%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .top-right-img {
-      display: none;
-    }
-    .bottom-right-img {
-      display: none;
-    }
-  }
-}

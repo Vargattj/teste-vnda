@@ -1,5 +1,9 @@
 .product-section {
   margin-left: auto;
+  .swiper-button-next,
+  .swiper-button-prev {
+    z-index: 0;
+  }
   h2 {
     margin-bottom: 20px;
   }

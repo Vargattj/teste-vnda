@@ -1,7 +1,6 @@
 export default function swiper() {
   $(function () {
     const headerSwiper = new Swiper(".swiper-container", {
-      // loop: true,
       autoplay: {
         disableOnInteraction: false,
         delay: 3000,
