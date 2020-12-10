@@ -1,0 +1,15 @@
+@import "base/base.scss";
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "vendors/swiper-bundle.min.css";
+@import url(vendors/swiper-bundle.min.css);
+
+@import "components/header.scss";
+@import "components/section-one.scss";
+@import "components/section-two.scss";
+@import "components/product-section.scss";
+@import "components/quote-section.scss";
+@import "components/blog-section.scss";
+@import "components/footer.scss";
+@import "responsive/responsive.scss";
